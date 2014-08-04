@@ -89,6 +89,7 @@ function! go#complete#Info()
 	" following lines are candiates, i.e:  func foo(name string),,foo(
 	let out = split(result, '\n')
 
+    :redraw!
 	" no candidates are found
 	if len(out) == 1
 		return
